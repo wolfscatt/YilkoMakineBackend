@@ -46,4 +46,5 @@ var user = {router, checkAuthenticated:(request, response, next)=>{
     }
     next()
 }}
+
 module.exports = user
