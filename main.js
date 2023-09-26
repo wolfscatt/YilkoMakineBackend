@@ -13,9 +13,9 @@ app.use(cors())
 app.use(bodyParser.json())
 db()
 
-app.use('/', mainService.router)
-app.use('/products', productService.router)
-app.use('/admin', userService.router)
+app.use('/api', mainService.router)
+app.use('/api/products', productService.router)
+app.use('/api/admin', userService.router)
 
 app.listen(process.env.PORT || 3000)
 
